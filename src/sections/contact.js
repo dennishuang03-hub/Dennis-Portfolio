@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ContactMe from "../assets/images/ContactMe.jpg";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -10,6 +11,8 @@ export default function Contact() {
         message: ""
     });
     const [formStatus, setFormStatus] = useState(null);
+
+    const formRef = useRef();
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -36,27 +39,41 @@ export default function Contact() {
     }, [hasAnimated]);
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
+                setFormData({
+                    ...formData,
+                    [e.target.name]: e.target.value
+                });
+            };
+
+            const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log("📨 Form data being sent:", formData);
+
+        setFormStatus("sending");
+
+        emailjs.send(
+            "service_hlkb5rd",
+            "template_hfk3q4d",
+            {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            },
+            "PYrpGC7cVF04C3kMY"
+        )
+        .then((result) => {
+            console.log("✅ EmailJS success:", result);
+            setFormStatus("success");
+        })
+        .catch((error) => {
+            console.error("❌ EmailJS error:", error);
+            setFormStatus("error");
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        
-        // Simulate form submission
-        setFormStatus("sending");
-        
-        setTimeout(() => {
-            setFormStatus("success");
-            setFormData({ name: "", email: "", subject: "", message: "" });
-            
-            setTimeout(() => {
-                setFormStatus(null);
-            }, 3000);
-        }, 1500);
-    };
+
 
     const contactInfo = [
         {

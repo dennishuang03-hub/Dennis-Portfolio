@@ -7,6 +7,7 @@ import Stack from './sections/stack';
 import Contact from './sections/contact';
 import Homes from './sections/home';
 import Timeline from './sections/timeline';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Timeline />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }

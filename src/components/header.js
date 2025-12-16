@@ -75,7 +75,7 @@ export default function Header() {
                 {/* RESUME BUTTON */}
                 <div className="hidden sm:flex">
                     <a
-                        href="/Dennis_Huang_Resume.pdf"
+                        href={`${process.env.PUBLIC_URL}/DennisHuang_Resume.pdf`}
                         download
                         className="bg-lime-400 font-minecraft text-black px-7 py-2 rounded-full flex items-center gap-2 hover:-translate-y-0.5"
                         >
@@ -109,7 +109,7 @@ export default function Header() {
                     ))}
 
                     <a
-                        href="/Dennis_Huang_Resume.pdf"
+                        href={`${process.env.PUBLIC_URL}/DennisHuang_Resume.pdf`}
                         download
                         className="bg-lime-400 text-black font-minecraft px-6 py-2 rounded-full flex items-center gap-2"
                         >
