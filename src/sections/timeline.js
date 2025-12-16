@@ -57,7 +57,7 @@ export default function Timeline() {
         },
         {
             id: 4,
-            date: "Apr 2025",
+            date: "Apr 2025 - Jul 2025",
             title: "Final Year Project",
             subtitle: "BMDS-ZKP: Secure Electronic Health Records",
             description: "Built a secure EHR system with Zero-Knowledge Proofs, blockchain audit logging, and IPFS storage. Implemented advanced cryptographic techniques for privacy-preserving healthcare data management.",
