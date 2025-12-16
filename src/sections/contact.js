@@ -273,7 +273,7 @@ export default function Contact() {
                                              text-white placeholder-gray-500
                                              focus:outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20
                                              transition-all duration-300"
-                                    placeholder="John Doe"
+                                    placeholder="Smith Stone"
                                 />
                             </div>
 
@@ -293,7 +293,7 @@ export default function Contact() {
                                              text-white placeholder-gray-500
                                              focus:outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20
                                              transition-all duration-300"
-                                    placeholder="john@example.com"
+                                    placeholder="Smith@example.com"
                                 />
                             </div>
 
@@ -313,7 +313,7 @@ export default function Contact() {
                                              text-white placeholder-gray-500
                                              focus:outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20
                                              transition-all duration-300"
-                                    placeholder="Project Inquiry"
+                                    placeholder="Subject"
                                 />
                             </div>
 
@@ -333,7 +333,7 @@ export default function Contact() {
                                              text-white placeholder-gray-500
                                              focus:outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20
                                              transition-all duration-300 resize-none"
-                                    placeholder="Tell me about your project..."
+                                    placeholder="Send me a message..."
                                 />
                             </div>
 
