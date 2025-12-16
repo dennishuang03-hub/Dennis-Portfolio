@@ -1,0 +1,36 @@
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-32 py-12 w-full max-w-6xl">
+                <img
+                    src={CVPhoto}
+                    alt="Dennis Huang"
+                    // className="w-64 h-64 sm:w-80 sm:h-80 rounded-lg object-cover shadow-2xl shadow-lime-400/30"
+                    // className="w-64 h-64 sm:w-80 sm:h-80 rounded-lg object-cover shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+                    className= "w-64 h-64 sm:w-80 sm:h-80 rounded-lg object-cover shadow-[0_0_30px_5px_rgba(132,255,0,0.3)]"
+                />
+
+                <pre className="text-green-400 font-mono text-xl leading-relaxed">
+                    <div>
+                        <span className="text-white">{`{`}</span>
+                        {"\n"}
+                        <span className="text-[#9cdcfe]">  "Name"</span>
+                        <span className="text-white">: </span>
+                        <span className="text-lime-400">"Dennis Huang"</span>
+                        <span className="text-white">,</span>
+                        {"\n"}
+                        <span className="text-[#9cdcfe]">  "Role"</span>
+                        <span className="text-white">: </span>
+                        <span className="text-lime-400">"Full-stack Developer"</span>
+                        <span className="text-white">,</span>
+                        {"\n"}
+                        <span className="text-[#9cdcfe]">  "Location"</span>
+                        <span className="text-white">: </span>
+                        <span className="text-lime-400">"Batam, Indonesia"</span>
+                        {"\n"}
+                        <span className="text-white">{`}`}</span>
+                    </div>
+
+                <p className="font-minecraft mt-8 text-pretty text-lg text-gray-50 text-justify sm:text-xl/8">
+                    I build fast, scalable, and well-structured applications from backend architecture to polished user interfaces.
+                    I enjoy solving real problems with clean APIs, strong authentication flows, and modern development tools.
+                </p>
+                </pre>
+            </div> 
