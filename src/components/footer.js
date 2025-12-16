@@ -15,7 +15,7 @@ export default function Footer() {
             </span>{" "}
             ·{" "}
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/dennishuang03-hub/Dennis-Portfolio"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4 hover:text-lime-400 transition"
