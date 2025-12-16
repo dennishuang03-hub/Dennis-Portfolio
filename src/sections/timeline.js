@@ -178,7 +178,7 @@ export default function Timeline() {
                 ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}
             `}>
                 <p className="font-minecraft text-4xl md:text-5xl tracking-tight">
-                    Work & Experience
+                    Education & Experience
                 </p>
                 <div className="flex items-center justify-center mt-4">
                     <span className="h-1 w-20 bg-gradient-to-r from-transparent to-lime-400 rounded-full" />
