@@ -7,7 +7,7 @@ import { scrollToSection } from "../utils/scrollToSection";
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [active, setActive] = useState("home");
-    const [isManualScroll, setIsManualScroll] = useState(false);
+    const [isManualScroll] = useState(false);
 
     const sections = ["home", "about", "project", "stack", "timeline", "contact"];
     

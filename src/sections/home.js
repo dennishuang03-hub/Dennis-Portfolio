@@ -46,9 +46,6 @@ export default function Homes() {
                     transition-all duration-1000 ease-out
                     ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}
                 `}>
-                    {/* <p className="text-lime-400 font-semibold text-base sm:text-lg mb-3 tracking-wide">
-                        Welcome to my portfolio
-                    </p> */}
                 </div>
 
                 {/* Main Heading with staggered animation */}
@@ -56,7 +53,7 @@ export default function Homes() {
                     transition-all duration-1000 ease-out delay-150
                     ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}
                 `}>
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-mono font-bold mb-4 leading-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-mono font-bold mb-4 leading-tight">
                         Hi, I'm{" "}
                         <span className="relative inline-block">
                             <span className="relative z-10 bg-gradient-to-r from-lime-400 to-lime-500 bg-clip-text text-transparent">
@@ -132,29 +129,6 @@ export default function Homes() {
                         />
                     </button>
 
-                    {/* <a 
-                        href="#about" 
-                        className="
-                            group relative
-                            px-8 py-3.5 rounded-full
-                            text-base font-semibold text-white
-                            bg-white/10 border-2 border-white/20
-                            backdrop-blur-sm
-                            transition-all duration-300
-                            hover:bg-white/20 hover:border-lime-400/50
-                            hover:-translate-y-1 hover:shadow-lg hover:shadow-white/20
-                            active:scale-95
-                        "
-                    >
-                        <span className="flex items-center gap-2">
-                            Learn More
-                            <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" 
-                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                                      d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </span>
-                    </a> */}
                     <button
                         type="button"
                         onClick={() => scrollToSection("about")}
@@ -192,10 +166,11 @@ export default function Homes() {
 
                 {/* Scroll Indicator */}
                 <div className={`
-                    absolute bottom-10 left-1/2 -translate-x-1/2
+                    absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2
                     transition-all duration-1000 ease-out delay-1000
                     ${hasAnimated ? 'opacity-100' : 'opacity-0'}
-                `}>
+                `}
+                >
                     <div className="flex flex-col items-center gap-2 animate-bounce">
                         <span className="text-sm text-gray-400 font-medium">Scroll Down</span>
                         <svg className="w-6 h-6 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

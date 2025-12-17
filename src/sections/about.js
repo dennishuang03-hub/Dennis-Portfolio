@@ -273,7 +273,7 @@ export default function About() {
                 </button>
                 
                 {/* Slide indicator dots (mobile only) */}
-                <div className="md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-30 pt-10">
+                <div className="md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-30 pt-14">
                     {slides.map((slide, idx) => (
                         <button
                             key={slide}
@@ -290,7 +290,7 @@ export default function About() {
 
                 {/* CONTENT CARD */}
                 <div
-                    className="flex h-full w-full transition-transform duration-500 ease-out"
+                    className="flex h-full w-full transition-transform duration-500 ease-out pb-10"
                     style={{
                         transform: `translateX(-${activeIndex * 100}%)`,
                     }}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import ContactMe from "../assets/images/ContactMe.jpg";
 import emailjs from "@emailjs/browser";
 
@@ -11,8 +11,6 @@ export default function Contact() {
         message: ""
     });
     const [formStatus, setFormStatus] = useState(null);
-
-    const formRef = useRef();
 
     useEffect(() => {
         const observer = new IntersectionObserver(
