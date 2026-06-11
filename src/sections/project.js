@@ -114,34 +114,36 @@ export default function Project() {
         },
         {
             id: 3,
-            title: "TeamOps: HR & Workforce Operations Platform",
-            description: "A task management platform enabling HR teams, managers, and employees to manage records, assign tasks, and track progress through role-based access control and scalable APIs.",
-            technologies: ["ASP.NET Core Web API", "React.js", "MySQL", "Tailwind CSS", "JWT Auth"],
+            title: "Green Karindo Elite Company Profile Website",
+            description: "A modern and responsive company profile landing page developed for Green Karindo Elite to showcase the company's services, values, and business information with a clean user experience and professional design.",
+            technologies: ["React.js", "TypeScript", "Vite", "HTML", "CSS"],
             image: InProgress,
-            github: "https://github.com/dennishuang03-hub/TeamOps",
-            detailedDescription: `
-                <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3>
-                <p class="mb-4 text-justify">TeamOps is an ongoing project aimed at creating a comprehensive HR and workforce management solution with modern architecture and user experience.</p>
-                
+            github: "",
+            detailedDescription: ` <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3> <p class="mb-4 text-justify">
+            Green Karindo Elite is a company profile website designed to establish an online presence and provide visitors with essential information about the company, its services, and its vision. The website focuses on responsive design, performance, and user-friendly navigation. </p>
+
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Key Features</h3>
                 <ul class="list-disc list-inside space-y-2 mb-4">
-                    <li>Employee record management and tracking</li>
-                    <li>Task assignment and progress monitoring</li>
-                    <li>Role-based access control (HR, Manager, Employee)</li>
-                    <li>Real-time notifications and updates</li>
-                    <li>Performance analytics and reporting</li>
+                    <li>Modern and responsive landing page design</li>
+                    <li>Interactive navigation with dropdown menus</li>
+                    <li>Company introduction and service sections</li>
+                    <li>Contact information and call-to-action sections</li>
+                    <li>Optimized layout for desktop and mobile devices</li>
+                    <li>Reusable and modular React components</li>
                 </ul>
-                
+
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Technical Stack</h3>
                 <ul class="list-disc list-inside space-y-2 mb-4">
-                    <li>ASP.NET Core Web API for robust backend services</li>
-                    <li>React.js with modern hooks for dynamic frontend</li>
-                    <li>MySQL for relational data management</li>
-                    <li>Tailwind CSS for responsive UI design</li>
+                    <li>React.js for building reusable UI components</li>
+                    <li>TypeScript for type safety and maintainability</li>
+                    <li>Vite for fast development and optimized builds</li>
+                    <li>HTML and CSS for structure and styling</li>
                 </ul>
-                
+
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Current Status</h3>
-                <p class="text-justify">This project is currently in active development, with core features being implemented and refined based on user feedback and requirements.</p>
+                <p class="text-justify">
+                    This project is currently under development. New sections and UI improvements are continuously being added to enhance the overall user experience and better represent the company's brand identity.
+                </p>
             `
         },
         {
