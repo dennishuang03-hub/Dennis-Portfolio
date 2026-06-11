@@ -2,14 +2,12 @@ import { useState, useEffect } from "react";
 import downloadIcon from "../assets/icons/downloads.png";
 import { scrollToSection } from "../utils/scrollToSection";
 
-
+const sections = ["home", "about", "project", "stack", "timeline", "contact"];
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [active, setActive] = useState("home");
     const [isManualScroll] = useState(false);
-
-    const sections = ["home", "about", "project", "stack", "timeline", "contact"];
     
     useEffect(() => {
         const observer = new IntersectionObserver(

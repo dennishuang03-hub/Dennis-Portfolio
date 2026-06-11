@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
+const roles = [
+  "Full-stack Developer",
+  "Backend Engineer",
+  "Software Engineer"
+];
+
 const TypingEffect = () => {
-  const roles = [
-    "Full-stack Developer",
-    "Backend Engineer",
-    "Software Engineer"
-  ];
 
   const [index, setIndex] = useState(0);     // which word
   const [subIndex, setSubIndex] = useState(0); // letter index
