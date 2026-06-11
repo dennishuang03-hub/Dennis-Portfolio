@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import WIS from "../assets/images/WIS.jpeg";
 import Portfolio from "../assets/images/Portfolio.png";
 import BMDS from "../assets/images/BMDS-ZKP.png";
-import InProgress from "../assets/images/In progress.png";
+// import InProgress from "../assets/images/In progress.png";
+import GreenKarindo from "../assets/images/GreenKarindoElite.png";
 
 export default function Project() {
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -117,8 +118,8 @@ export default function Project() {
             title: "Green Karindo Elite Company Profile Website",
             description: "A modern and responsive company profile landing page developed for Green Karindo Elite to showcase the company's services, values, and business information with a clean user experience and professional design.",
             technologies: ["React.js", "TypeScript", "Vite", "HTML", "CSS"],
-            image: InProgress,
-            github: "",
+            image: GreenKarindo,
+            github: "https://github.com/dennishuang03-hub/GreenKarindoElite",
             detailedDescription: ` <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3> <p class="mb-4 text-justify">
             Green Karindo Elite is a company profile website designed to establish an online presence and provide visitors with essential information about the company, its services, and its vision. The website focuses on responsive design, performance, and user-friendly navigation. </p>
 
