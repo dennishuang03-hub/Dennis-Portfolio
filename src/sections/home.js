@@ -19,24 +19,23 @@ export default function Homes() {
         >
             {/* Animated Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-neutral-900 to-black">
-                {/* Background pattern */}
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute inset-0" 
-                         style={{
-                             backgroundImage: `radial-gradient(circle at 2px 2px, rgb(134, 239, 172) 1px, transparent 0)`,
-                             backgroundSize: '40px 40px'
-                         }} 
-                    />
-                </div>
-                
-                {/* Animated gradient orbs */}
-                <div className="absolute top-0 right-0 w-96 h-96 bg-lime-400/10 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-lime-500/10 rounded-full blur-3xl animate-pulse" 
-                     style={{ animationDelay: '1s' }} />
+                {/* Subtle dot grid */}
+                <div className="absolute inset-0 opacity-[0.07]"
+                     style={{
+                         backgroundImage: `radial-gradient(circle at 1px 1px, rgb(190, 242, 100) 1px, transparent 0)`,
+                         backgroundSize: '46px 46px'
+                     }}
+                />
+
+                {/* Soft, slow-drifting glows */}
+                <div className="absolute -top-24 -right-24 w-[28rem] h-[28rem] bg-lime-400/10 rounded-full blur-[120px] animate-float-slow" />
+                <div className="absolute -bottom-24 -left-24 w-[28rem] h-[28rem] bg-emerald-500/10 rounded-full blur-[120px] animate-float-slow"
+                     style={{ animationDelay: '3s' }} />
             </div>
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
+            {/* Overlay + soft vignette */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
+            <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%)' }} />
 
             {/* Content */}
             <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
@@ -236,11 +235,6 @@ export default function Homes() {
                     </div>
                 </div>
             </div>
-
-            {/* Decorative elements */}
-            <div className="absolute top-20 left-10 w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
-            <div className="absolute top-40 right-20 w-3 h-3 bg-lime-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
-            <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-lime-400 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
         </section>
     );
 }

@@ -45,7 +45,7 @@ export default function Project() {
             github: "https://github.com/dennishuang03-hub/WIS",
             detailedDescription: `
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3>
-                <p class="mb-4 text-justify">The Worker Identification System (WIS) is a web application ready for production. It digitizes worker identification and credential management for internal use. The system brings together worker records, certificates, and verification processes into one platform. This helps HR teams and site supervisors in their daily tasks. The system was created to replace inconsistent manual processes with a dependable, secure, and easy-to-maintain platform that operates in real work environments.</p>
+                <p class="mb-4 text-left">The Worker Identification System (WIS) is a web application ready for production. It digitizes worker identification and credential management for internal use. The system brings together worker records, certificates, and verification processes into one platform. This helps HR teams and site supervisors in their daily tasks. The system was created to replace inconsistent manual processes with a dependable, secure, and easy-to-maintain platform that operates in real work environments.</p>
                 
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Key Features</h3>
                 <ul class="list-disc list-inside space-y-2 mb-4">
@@ -72,7 +72,7 @@ export default function Project() {
                 </ul>
                 
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Impact</h3>
-                <p class="text-justify">The system provided a 60% improvement in workflow efficiency by using automation for worker identification and verification. It increased compliance visibility by clearly showing expired certificates and terminated workers, which helped HR teams take action in advance. Site supervisors also gained from quicker and more dependable on-site verification. This reduced delays and lessened human error during daily operations.</p>
+                <p class="text-left">The system provided a 60% improvement in workflow efficiency by using automation for worker identification and verification. It increased compliance visibility by clearly showing expired certificates and terminated workers, which helped HR teams take action in advance. Site supervisors also gained from quicker and more dependable on-site verification. This reduced delays and lessened human error during daily operations.</p>
             `
         },
         {
@@ -84,7 +84,7 @@ export default function Project() {
             github: "https://github.com/dennishuang03-hub/BMDS-ZKP",
             detailedDescription: `
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3>
-                <p class="mb-4 text-justify">The BMDS-ZKP (Blockchain-based Medical Data System with Zero-Knowledge Proofs) is a secure electronic health record (EHR) web application designed to protect sensitive medical data while ensuring controlled and verifiable access. The system integrates cryptographic access control, zero-knowledge proofs, and blockchain-based audit logging to prevent unauthorized data access and data tampering. BMDS-ZKP was developed to address real privacy, integrity, and trust challenges in healthcare systems, where confidentiality and accountability are critical.</p>
+                <p class="mb-4 text-left">The BMDS-ZKP (Blockchain-based Medical Data System with Zero-Knowledge Proofs) is a secure electronic health record (EHR) web application designed to protect sensitive medical data while ensuring controlled and verifiable access. The system integrates cryptographic access control, zero-knowledge proofs, and blockchain-based audit logging to prevent unauthorized data access and data tampering. BMDS-ZKP was developed to address real privacy, integrity, and trust challenges in healthcare systems, where confidentiality and accountability are critical.</p>
                 
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Key Features</h3>
                 <ul class="list-disc list-inside space-y-2 mb-4">
@@ -110,7 +110,7 @@ export default function Project() {
                 </ul>
                 
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Impact</h3>
-                <p class="text-justify">The system improved data confidentiality and access accuracy by approximately 40% through the use of cryptographic access control and zero-knowledge verification. By leveraging blockchain-based audit logging, BMDS-ZKP provided tamper-proof access trails, reducing audit verification time by around 50%. Overall, the system increased record retrieval reliability while significantly reducing manual validation overhead, demonstrating a practical and secure approach to managing sensitive healthcare data.</p>
+                <p class="text-left">The system improved data confidentiality and access accuracy by approximately 40% through the use of cryptographic access control and zero-knowledge verification. By leveraging blockchain-based audit logging, BMDS-ZKP provided tamper-proof access trails, reducing audit verification time by around 50%. Overall, the system increased record retrieval reliability while significantly reducing manual validation overhead, demonstrating a practical and secure approach to managing sensitive healthcare data.</p>
             `
         },
         {
@@ -120,7 +120,7 @@ export default function Project() {
             technologies: ["React.js", "TypeScript", "Vite", "HTML", "CSS"],
             image: GreenKarindo,
             github: "https://github.com/dennishuang03-hub/GreenKarindoElite",
-            detailedDescription: ` <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3> <p class="mb-4 text-justify">
+            detailedDescription: ` <h3 class="text-xl font-bold text-lime-400 mb-3">Overview</h3> <p class="mb-4 text-left">
             Green Karindo Elite is a company profile website designed to establish an online presence and provide visitors with essential information about the company, its services, and its vision. The website focuses on responsive design, performance, and user-friendly navigation. </p>
 
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Key Features</h3>
@@ -142,7 +142,7 @@ export default function Project() {
                 </ul>
 
                 <h3 class="text-xl font-bold text-lime-400 mb-3">Current Status</h3>
-                <p class="text-justify">
+                <p class="text-left">
                     This project is currently under development. New sections and UI improvements are continuously being added to enhance the overall user experience and better represent the company's brand identity.
                 </p>
             `
@@ -207,7 +207,7 @@ export default function Project() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-300 text-sm leading-relaxed text-justify">
+                <p className="text-gray-300 text-sm leading-relaxed text-left">
                     {project.description}
                 </p>
 

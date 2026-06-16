@@ -67,9 +67,9 @@ export default function Timeline() {
         {
             id: 5,
             date: "Present",
-            title: "Independent Full-Stack Projects",
-            subtitle: "Self-Directed Development",
-            description: "Building TeamOps HR platform with ASP.NET Core and React. Creating modern web applications with focus on scalability, security, and user experience.",
+            title: "Freelance Web Developer",
+            subtitle: "Independent / Contract",
+            description: "Building websites and web applications for businesses, from company landing pages to custom full-stack solutions. Delivering responsive, modern designs with a focus on performance and client needs.",
             type: "work",
             side: "right"
         }

@@ -144,11 +144,6 @@ export default function Contact() {
         >
             {/* Animated background gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-lime-400/5 via-transparent to-transparent pointer-events-none" />
-            
-            {/* Decorative elements */}
-            <div className="absolute top-20 left-10 w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
-            <div className="absolute top-40 right-20 w-3 h-3 bg-lime-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
-            <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-lime-400 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
 
             {/* Header Title */}
             <div className={`

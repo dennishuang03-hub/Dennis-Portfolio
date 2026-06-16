@@ -383,12 +383,12 @@ export default function About() {
                                             px-6 lg:px-12">
                                 <div className="font-mono max-w-3xl text-base sm:text-lg lg:text-xl 
                                               text-gray-100 leading-relaxed space-y-6">
-                                    <p className="text-justify">
+                                    <p className="text-left">
                                         I have delivered <Highlight>production-ready software</Highlight> that cut down on <Highlight>manual work</Highlight>, <Highlight>reduced errors</Highlight>, and <Highlight>improved workflow efficiency</Highlight>. 
                                         I worked directly with <Highlight>real users</Highlight> and <Highlight>faced real problems</Highlight>. This experience taught me to think beyond code. I learned how systems are really used, where they fail, and how small design choices can add up over time.
                                     </p>
 
-                                    <p className="text-justify">
+                                    <p className="text-left">
                                         I enhance my skills and knowledge as I love to explore new things in new environments.
                                     </p>
                                 </div>
@@ -404,13 +404,13 @@ export default function About() {
                                             px-6 lg:px-12">
                                 <div className="font-mono max-w-3xl text-base sm:text-lg lg:text-xl 
                                               text-gray-100 leading-relaxed space-y-6">
-                                    <p className="text-justify">
+                                    <p className="text-left">
                                         I want to grow as a developer by <Highlight>taking responsibility</Highlight> for the software I create. 
                                         This includes <Highlight>understanding client needs</Highlight> and <Highlight>delivering reliable</Highlight>, 
                                         <Highlight>well-structured solutions</Highlight> that perform well in real-world settings.
                                     </p>
 
-                                    <p className="text-justify">
+                                    <p className="text-left">
                                         I care about building software that not only works correctly but is also <Highlight>maintainable</Highlight>, <Highlight>secure</Highlight>, and <Highlight>meets</Highlight> client expectations. 
                                         This way, it can provide lasting value beyond the initial delivery.
                                     </p>
