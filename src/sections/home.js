@@ -40,12 +40,21 @@ export default function Homes() {
 
             {/* Content */}
             <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-                
-                {/* Greeting with animation */}
+
+                {/* Availability badge */}
                 <div className={`
-                    transition-all duration-1000 ease-out
+                    mb-6 transition-all duration-1000 ease-out
                     ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}
                 `}>
+                    <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                                     bg-lime-400/10 border border-lime-400/40 backdrop-blur-sm
+                                     text-sm font-mono text-lime-300">
+                        <span className="relative flex h-2.5 w-2.5">
+                            <span className="absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75 animate-ping" />
+                            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-lime-400" />
+                        </span>
+                        Open to Software Engineer roles
+                    </span>
                 </div>
 
                 {/* Main Heading with staggered animation */}
@@ -79,10 +88,30 @@ export default function Homes() {
                     transition-all duration-1000 ease-out delay-500
                     ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}
                 `}>
-                    <p className="text-base sm:text-lg text-gray-300 max-w-3xl leading-relaxed mb-10 px-4 font-mono">
+                    <p className="text-base sm:text-lg text-gray-300 max-w-3xl leading-relaxed mb-8 px-4 font-mono">
                         I build fast, scalable, and well-structured applications from backend architecture to polished user interfaces.
                         I solve real problems with clean APIs, strong authentication flows, and modern development tools.
                     </p>
+                </div>
+
+                {/* Quick stats strip */}
+                <div className={`
+                    flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-10 font-mono
+                    transition-all duration-1000 ease-out delay-500
+                    ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
+                `}>
+                    {[
+                        { value: "60%", label: "Efficiency gained" },
+                        { value: "4+", label: "Projects shipped" },
+                        { value: "B.CS", label: "Honours graduate" },
+                    ].map((stat) => (
+                        <div key={stat.label} className="flex flex-col items-center">
+                            <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-lime-400 to-lime-500 bg-clip-text text-transparent">
+                                {stat.value}
+                            </span>
+                            <span className="text-xs sm:text-sm text-gray-400">{stat.label}</span>
+                        </div>
+                    ))}
                 </div>
 
                 {/* CTA Buttons with animation */}
@@ -131,7 +160,7 @@ export default function Homes() {
 
                     <button
                         type="button"
-                        onClick={() => scrollToSection("about")}
+                        onClick={() => scrollToSection("project")}
                         className="
                             group relative
                             px-8 py-3.5 rounded-full
@@ -151,7 +180,7 @@ export default function Homes() {
                         "
                         >
                         <span className="flex items-center gap-2">
-                            Learn More
+                            View My Work
                             <span
                             className="
                                 transition-transform duration-300
@@ -162,6 +191,34 @@ export default function Homes() {
                             </span>
                         </span>
                     </button>
+
+                    {/* RESUME DOWNLOAD */}
+                    <a
+                        href={`${process.env.PUBLIC_URL}/DennisHuang_Resume.pdf`}
+                        download
+                        className="
+                            group relative
+                            px-8 py-3.5 rounded-full
+                            text-base font-semibold text-lime-400
+
+                            border-2 border-lime-400/40
+                            transition-all duration-300
+                            hover:bg-lime-400/10
+                            hover:border-lime-400/70
+                            hover:-translate-y-1
+                            hover:shadow-lg hover:shadow-lime-400/20
+                            active:scale-95
+
+                            focus:outline-none focus:ring-2 focus:ring-lime-400/40 focus:ring-offset-2
+                        "
+                        >
+                        <span className="flex items-center gap-2">
+                            Resume
+                            <svg className="w-4 h-4 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </span>
+                    </a>
                 </div>
 
                 {/* Scroll Indicator */}

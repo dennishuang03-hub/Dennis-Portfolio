@@ -399,6 +399,13 @@ export default function Project() {
                 </div>
             </div>
 
+            {/* Subtitle */}
+            <p className={`text-gray-400 text-lg text-center max-w-2xl mb-12 -mt-4 transition-all duration-700 delay-100 ${
+                hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}>
+                Real systems I've designed, built, and shipped
+            </p>
+
             {/* PROJECT CARDS CONTAINER - Grid Layout */}
             <div className="w-full max-w-7xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

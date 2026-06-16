@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* Primary line */}
           <p className="text-sm font-mono">
-            © 2025 · Built by{" "}
+            © 2026 · Built by{" "}
             <span className="text-lime-400 font-semibold">
               Dennis
             </span>{" "}
