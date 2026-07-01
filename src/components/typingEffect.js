@@ -46,9 +46,9 @@ const TypingEffect = () => {
   }, []);
 
   return (
-    <span className="text-xl sm:text-3xl text-lime-400 font-mono font-bold text-gray-200">
+    <span className="text-xl sm:text-3xl font-mono font-bold text-lime-400">
       {roles[index].substring(0, subIndex)}
-      <span className={`${blink ? "opacity-100" : "opacity-0"} ml-1`}>
+      <span className={`${blink ? "opacity-100" : "opacity-0"} ml-1 text-lime-400`}>
         _
       </span>
     </span>

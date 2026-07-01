@@ -61,7 +61,7 @@ export default function Homes() {
                     transition-all duration-1000 ease-out delay-150
                     ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}
                 `}>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-mono font-bold mb-4 leading-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-4 leading-tight tracking-tight">
                         Hi, I'm{" "}
                         <span className="relative inline-block">
                             <span className="relative z-10 bg-gradient-to-r from-lime-400 to-lime-500 bg-clip-text text-transparent">
@@ -87,9 +87,9 @@ export default function Homes() {
                     transition-all duration-1000 ease-out delay-500
                     ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}
                 `}>
-                    <p className="text-base sm:text-lg text-gray-300 max-w-3xl leading-relaxed mb-8 px-4 font-mono">
-                        I build fast, scalable, and well-structured applications from backend architecture to polished user interfaces.
-                        I solve real problems with clean APIs, strong authentication flows, and modern development tools.
+                    <p className="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed mb-8 px-4 font-sans">
+                        I build fast, scalable, and well-structured applications — from backend architecture to polished user interfaces —
+                        solving real problems with clean APIs, strong authentication flows, and modern development tooling.
                     </p>
                 </div>
 

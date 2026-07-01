@@ -150,7 +150,7 @@ export default function Contact() {
                 relative inline-block mb-12 transition-all duration-700
                 ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}
             `}>
-                <h2 className="font-minecraft text-4xl md:text-5xl tracking-tight text-center">
+                <h2 className="font-display font-bold text-4xl md:text-5xl tracking-tight text-center">
                     Get In Touch
                 </h2>
                 <div className="flex items-center justify-center mt-4">
@@ -185,7 +185,7 @@ export default function Contact() {
                                 alt="Dennis Huang"
                                 className="w-full h-64 object-cover rounded-xl mb-4"
                             />
-                            <h3 className="text-2xl font-bold text-lime-400 mb-2">Dennis Huang</h3>
+                            <h3 className="font-display text-2xl font-bold text-white mb-2 tracking-tight">Dennis Huang</h3>
                             {/* Social Links */}
                             <div className="flex gap-3">
                                 {socialLinks.map((social) => (
@@ -247,7 +247,7 @@ export default function Contact() {
                     ${hasAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}
                 `}>
                     <div className="bg-neutral-900 rounded-2xl p-8 border border-white/10">
-                        <h3 className="text-2xl font-bold text-lime-400 mb-6">Send a Message</h3>
+                        <h3 className="font-display text-2xl font-bold text-lime-400 mb-6 tracking-tight">Send a Message</h3>
                         
                         <div className="space-y-6">
                             {/* Name Input */}

@@ -73,7 +73,7 @@ export default function Stack() {
       <div className={`relative inline-block mb-12 transition-all duration-700 ${
         hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
       }`}>
-        <div className="font-minecraft text-4xl md:text-5xl tracking-tight">
+        <div className="font-display font-bold text-4xl md:text-5xl tracking-tight">
           Tech Stack
           <div className="flex items-center justify-center mt-4">
             <span className="h-1 w-20 bg-gradient-to-r from-transparent to-lime-400 rounded-full" />

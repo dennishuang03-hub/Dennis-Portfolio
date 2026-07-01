@@ -183,8 +183,10 @@ export default function Project() {
     const ProjectCard = ({ project, index }) => (
         <div 
             className={`
-                group relative bg-neutral-800 rounded-xl shadow-xl overflow-hidden
-                transition-all duration-700 hover:shadow-2xl hover:-translate-y-2
+                group relative bg-neutral-900 rounded-2xl shadow-xl overflow-hidden
+                border border-white/10
+                transition-all duration-500 hover:-translate-y-2
+                hover:border-lime-400/40 hover:shadow-2xl hover:shadow-lime-400/10
                 ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
             `}
             style={{ transitionDelay: `${index * 150}ms` }}
@@ -202,7 +204,7 @@ export default function Project() {
             {/* Project Content */}
             <div className="p-6 space-y-4">
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-lime-400 group-hover:text-lime-300 transition-colors">
+                <h3 className="font-display text-xl md:text-2xl font-bold text-lime-400 group-hover:text-lime-300 transition-colors tracking-tight">
                     {project.title}
                 </h3>
 
@@ -328,7 +330,7 @@ export default function Project() {
                         </div>
 
                         {/* Title */}
-                        <h2 className="text-3xl font-bold text-lime-400 mb-4">
+                        <h2 className="font-display text-2xl md:text-3xl font-bold text-lime-400 mb-4 tracking-tight">
                             {project.title}
                         </h2>
 
@@ -389,7 +391,7 @@ export default function Project() {
             <div className={`relative inline-block mb-12 transition-all duration-700 ${
                 hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
             }`}>
-                <div className="font-minecraft text-4xl md:text-5xl tracking-tight">
+                <div className="font-display font-bold text-4xl md:text-5xl tracking-tight">
                     My Projects
                     <div className="flex items-center justify-center mt-4">
                         <span className="h-1 w-20 bg-gradient-to-r from-transparent to-lime-400 rounded-full" />

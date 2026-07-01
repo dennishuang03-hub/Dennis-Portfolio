@@ -111,7 +111,7 @@ export default function Timeline() {
 
                     {/* Title */}
                     <h3 className={`
-                        text-xl font-bold mb-2
+                        font-display text-xl font-bold mb-2 tracking-tight
                         ${item.type === "education" ? "text-lime-400" : "text-white"}
                     `}>
                         {item.title}
@@ -177,7 +177,7 @@ export default function Timeline() {
                 relative inline-block mb-16 transition-all duration-700
                 ${hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}
             `}>
-                <p className="font-minecraft text-3xl md:text-5xl tracking-tight justify-center">
+                <p className="font-display font-bold text-3xl md:text-5xl tracking-tight justify-center">
                     Education & Experience
                 </p>
                 <div className="flex items-center justify-center mt-4">

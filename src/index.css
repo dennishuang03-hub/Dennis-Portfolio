@@ -8,9 +8,16 @@ html {
 }
 
 body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  letter-spacing: -0.011em;
+}
+
+/* Display headings tracking */
+.font-display {
+  letter-spacing: -0.02em;
 }
 
 /* Branded text selection */
@@ -42,7 +49,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgba(163, 230, 53, 0.8), rgba(132, 204, 22, 0.8));
+  background: linear-gradient(180deg, rgba(163, 230, 53, 0.85), rgba(132, 204, 22, 0.85));
   background-clip: content-box;
 }
 
@@ -56,30 +63,8 @@ body {
   animation: float-slow 9s ease-in-out infinite;
 }
 
-@font-face {
-  font-family: 'Minecraft';
-  src: url('./assets/fonts/minecraft-font/MinecraftRegular-Bmg3.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Minecraft';
-  src: url('./assets/fonts/minecraft-font/MinecraftBold-nMK1.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Minecraft';
-  src: url('./assets/fonts/minecraft-font/MinecraftItalic-R8Mo.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Minecraft';
-  src: url('./assets/fonts/minecraft-font/MinecraftBoldItalic-1y1e.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
+/* Subtle rise-in used for scroll-reveal accents */
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(14px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
